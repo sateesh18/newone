@@ -1,0 +1,59 @@
+@Library('mylibrary')_
+pipeline
+{
+    agent any
+    stages
+    {
+        stage('ContinuousDownload_master')
+        {
+            steps
+            {
+                script
+                {
+                    cicd.newGit("https://github.com/jayadeep3/mymaven.git")
+                }
+            }
+        }
+        stage('ContinuousBuild_master')
+        {
+            steps
+            {
+                script
+                {
+                    cicd.newMaven()
+                }
+            }
+        }
+        stage('ContinuousDeployment_master')
+        {
+            steps
+            {
+                script
+                {
+                    cicd.newDeploy("SharedLibrarywithDeclarativePipeline","172.31.13.173","testapp")
+                }
+            }
+        }
+        stage('ContinuousTesting_master')
+        {
+            steps
+            {
+                script
+                {
+                    cicd.newGit("https://github.com/intelliqittrainings/FunctionalTesting.git")
+                    cicd.newSelenium("SharedLibrarywithDeclarativePipeline")
+                }
+            }
+        }
+        stage('ContinuousDelivery_master')
+        {
+            steps
+            {
+                script
+                {
+                    cicd.newDeploy("SharedLibrarywithDeclarativePipeline","172.31.3.39","prodapp")
+                }
+            }
+        }
+    }
+}
