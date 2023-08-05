@@ -1,0 +1,32 @@
+1.What is cherrypick?
+2.What is Git rebase?
+3.Difference between Git pull & Git fetch?
+4.What is Docker? How it works?
+5.Do you know about Docker signal?
+6.Defference between Docker Swarm and k8s
+7.what is docker-compose file?
+8.what is the use of Docker volumes?
+9.what is virtualization and containarization?
+10.which tool you used for build?
+11.what are the phases in build lifecycle?
+12.how to configure SonarQube in your Jenkins?
+13.how to backup your Jenkins jobs?
+14.how to get notifications from Jenkins when the build was triggered or build success/failed.
+15.Difference between continuous deployment and continuous delivery?
+16.types of pipelines ? What is the difference between declarative and scripted pipelines
+17.write declarative pipeline for build job and push artifacts to artifactory repo
+18.how to use ansible-playbooks in your project?
+19.what is terraform provisioner?
+20.write terraform code for create ec2 instance in two regions like N.virginia and oregon 
+21.where you backup the terraform resources?
+22.i want to create ec2 instance using terraform but it won't allow the Name when it exceed 10 charactors. how?
+23.how to backup terraform resources from s3 bucket?
+24.do you Know about ECS , Eks , rds
+25.why we us is lamda ?
+26.how to secure your EC2 instances?
+27.defferense between security group and NACL
+28.what is public subnet and private subnet? How to access the private subnets?
+29.what is stateful and stateless applications?
+30.what are the chalenges you faced in your project?
+31. Are you worked on python/shell scriping?
+32.about loadbalencing
